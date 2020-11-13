@@ -1,0 +1,53 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	long double a, b, wynik;
+	int wybor;
+	cout<<"Najlepszy na swiecie kalkulator operujacy na dwoch zmiennych :)\nSprawdz jak smiga ^^\n";
+	cout<<"\nPodaj pierwsza liczbe  =  ";
+	cin>>a;
+	cout<< "Podaj druga liczbe     =  ";
+	cin>>b;
+	
+	cout<<"\nWybierz rodzaj dzialania ";
+	cout<<"\n1. +";
+	cout<<"\n2. -";
+	cout<<"\n3. *";
+	cout<<"\n4. /";
+		cout<<"\n";
+		cout<<"\n";
+	cin>>wybor;
+		cout<<"\n";
+		cout<<"\n";
+		
+	switch (wybor)
+	{
+		case 1:
+			cout<<"Wynik dzialania =   "<<a+b;
+			break;
+		case 2:
+			cout<<"Wynik dzialania =   "<<a-b;
+			break;
+		case 3:
+			cout<<"Wynik dzialania =   "<<a*b;
+			break;
+		case 4:
+			cout<<"Wynik dzialania =   "<<a/b;
+			break;	
+		default:
+			cout<<"Nie ma takiej wartosci. Zrestartuj program i sprobuj ponownie.";
+	}
+		cout<<"\n";
+		cout<<"\n";		
+		cout<<"\n";
+		cout<<"\n";
+
+system("PAUSE"); 
+cin.ignore();
+getchar();
+return 0;
+}
